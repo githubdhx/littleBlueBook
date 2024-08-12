@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "搜索",
+  "usingComponents": {
+    "title-content": "../../components/title-content/title-content"
+  }
+}

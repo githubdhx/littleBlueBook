@@ -1,0 +1,1 @@
+<view class="nav data-v-e80b2f0b" style="{{c}}"><image src="/static/xhs.png" alt="" class="bar_img data-v-e80b2f0b"/><input type="text" placeholder="{{a}}" class="iconfont data-v-e80b2f0b" bindfocus="{{b}}"/></view><view class="data-v-e80b2f0b" style="{{d}}"></view>

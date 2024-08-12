@@ -1,0 +1,87 @@
+{
+	"easycom": {
+			"autoscan": true,
+			// 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
+			"custom": {
+				"^u--(.*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue",
+				"^up-(.*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue",
+				"^u-([^-].*)": "@/uni_modules/uview-plus/components/u-$1/u-$1.vue"
+			}
+		},
+	
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		// {
+		// 	"path": "subpkg/main_search/main_search",
+		// 	"style": {
+		// 		"navigationBarTitleText": "小蓝书"
+				
+		// 	}
+		// },
+		
+		{
+			"path": "pages/index/index",
+			"style": {
+				// "navigationBarTitleText": "小蓝书",
+				// 自定义胶囊
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/me/me",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		}
+		
+	],
+	"subPackages": [
+		{
+				
+			"root": "subpkg",
+			"pages": [ 
+				{
+					"path": "main_search/main_search",
+					"style": {
+						"navigationBarTitleText": "搜索"
+						
+					}
+				},
+				{
+					"path": "detail/detail",
+						"style": {
+							"navigationBarTitleText": " "
+							
+						}
+				}
+			]
+		}
+	],
+	"tabBar":{
+	        "color": "#777",
+	        "selectedColor": "#1cb9ce",
+	        "list":[
+	            {
+					"pagePath": "pages/index/index",
+					"text":"首页",
+					"iconPath": "static/shouye.png",
+					"selectedIconPath": "static/index-copy.png"
+				},
+				{
+					"pagePath": "pages/me/me",
+					"text":"我的",
+					"iconPath": "static/wode.png",
+					"selectedIconPath": "static/wode_1.png"
+				}
+				
+	        ]
+	    },
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		
+		
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}

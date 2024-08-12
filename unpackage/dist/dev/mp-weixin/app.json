@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/me/me"
+  ],
+  "subPackages": [
+    {
+      "root": "subpkg",
+      "pages": [
+        "main_search/main_search",
+        "detail/detail"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#777",
+    "selectedColor": "#1cb9ce",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/shouye.png",
+        "selectedIconPath": "static/index-copy.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "static/wode.png",
+        "selectedIconPath": "static/wode_1.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
